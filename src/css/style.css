@@ -46,7 +46,7 @@ main:after {
 
 .imagem.ativa {
     display: block;
-    animation: mudarImagem 0.7s;
+    animation: alterarImagem 0.7s;
 }
 
 .container {
@@ -60,7 +60,7 @@ main:after {
     display: none;
 }
 
-.informacoes.ativo {
+.informacoes.ativa {
     display: block;
 }
 

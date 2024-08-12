@@ -14,6 +14,9 @@
 
 body {
     font-family: "Poppins", sans-serif;
+}
+
+main {
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -53,7 +56,7 @@ main:after {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    min-height: 100vh;
+    min-height: 85vh;
 }
 
 .informacoes {
@@ -78,7 +81,7 @@ main:after {
     font-size: 24px;
     color: #FFFFFF;
     line-height: 40px;
-    /* em caso de muito texto */
+    /* scrollbar em caso de muito texto */
     height: 300px;
     overflow: auto;
     padding-right: 15px;
@@ -100,23 +103,33 @@ main:after {
 }
 
 .carrossel-botoes .botao.selecionado {
-    background: #1D8346;
+    background: #1d8346;
 }
 
-/* .rodape {
-    background: rgb(67,67,67);
-    background: linear-gradient(0deg, rgba(67,67,67,1) 0%, rgba(255,255,255,1) 100%);
+.rodape {
+    color:#FFFFFF;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 35%, rgba(255,255,255,0) 100%);
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 15px 0;
+    padding: 20px 0 1px 0;
+    width: 100%;
 }
 
 .rodape .social {
     display: flex;
     justify-content: center;
+    gap: 30px;
 }
 
 .rodape .social a {
-    margin: 0 5px;
-} */
+    margin: 9px 2px;
+    color: #FFFFFF;
+    font-size: large;
+    transition: 0.3s ease-in-out;
+}
+
+.rodape .social a:hover {
+    color:#1d8346;
+}
